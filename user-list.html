@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>User List</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Registered Users</h1> 
+
+  <table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Full Name</th>
+        <th>Email</th>
+        <th>Phone</th>
+        <th>Address</th>
+        <th>Role</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody id="userTableBody"></tbody>
+  </table>
+
+  <!-- Update Popup -->
+  <div id="popup">
+    <h3>Update User</h3>
+    <form id="updateForm">
+      <input type="hidden" id="upd_id">
+
+      <label>Full Name:</label><br>
+      <input type="text" id="upd_name" required><br><br>
+
+      <label>Email:</label><br>
+      <input type="email" id="upd_email" required><br><br>
+
+      <label>Phone:</label><br>
+      <input type="text" id="upd_phone"><br><br>
+
+      <label>Address:</label><br>
+      <input type="text" id="upd_address"><br><br>
+
+      <label>Role:</label><br>
+      <input type="text" id="upd_role"><br><br>
+
+      <button type="submit">Save Update</button>
+      <button type="button" onclick="closePopup()">Cancel</button>
+    </form>
+  </div>
+  <a href="index.html">Back to Register Form</a>
+
+  <script src="app.js"></script>
+  
+</body>
+</html>

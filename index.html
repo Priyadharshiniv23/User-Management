@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="form-container">
+        <h2>User Registration</h2>
+
+        <form action="http://localhost:5000/register" method="POST">
+
+            <label>Full Name</label>
+            <input type="text" name="fullName" placeholder="Enter full name" required>
+
+            <label>Email</label>
+            <input type="email" name="email" placeholder="Enter email address" required>
+
+            <label>Phone Number</label>
+            <input type="text" name="phone" placeholder="Enter phone number" required>
+
+            <label>Address</label>
+            <textarea name="address" rows="3" placeholder="Enter address" required></textarea>
+
+            <label>Password</label>
+            <input type="password" name="password" placeholder="Enter password" required>
+
+            <button type="submit">Register</button>
+            <div class="center">
+            <a href="user-list.html">View User List</a>
+            </div>
+        </form>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
