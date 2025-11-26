@@ -1,7 +1,7 @@
 // -----------------------
 // CORRECT API BASE URL
 // -----------------------
-const API_BASE_URL = "http://localhost:3000/api/users";
+const API_BASE_URL = "https://user-management-ozhy.onrender.com/";
 
 // -----------------------
 // 1. REGISTRATION
@@ -185,3 +185,4 @@ document.addEventListener("DOMContentLoaded", () => {
     if (registerForm) handleRegistration();
     if (userTableBody) fetchUsers();
 });
+
